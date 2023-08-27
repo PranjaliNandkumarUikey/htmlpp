@@ -1,0 +1,68 @@
+
+body {
+    font-family: Arial,sans-serif;
+    margin:10;
+    padding:10;
+    background-color: rgb(247, 246, 246);
+}
+
+header {
+    background-color: rgb(5, 19, 58);
+    color:rgb(149, 93, 212);
+    #ShuffleButton 
+    {
+        font-size: 24px; 
+    }
+    text-align: center;
+    margin-bottom: 20px;
+   
+}
+
+#roomcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.Room {
+    border: 1px solidm #e2dcdc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.room-no {
+    margin-bottom: 10px;
+    background-color: rgb(48, 2, 2);
+    color: #ccc;
+    padding:10px;
+    border-radius: 10px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.table, th, td {
+    border:1px solid #ccc;
+}
+
+.th,td {
+    padding: 10px;
+    text-align: left;
+}
+
+.td.call, td.sir {
+    font-weight: bold;
+    text-align: center;
+    width: 20px;
+}
+
+.room::after {
+    content: "";
+    display: table;
+    clear: both;
+}
